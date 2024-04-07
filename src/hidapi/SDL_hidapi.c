@@ -52,7 +52,7 @@
 #include <IOKit/usb/USBSpec.h>
 #include <AvailabilityMacros.h>
 /* Things named "Master" were renamed to "Main" in macOS 12.0's SDK. */
-#if MAC_OS_X_VERSION_MIN_REQUIRED < 120000
+#if MAC_OS_X_VERSION_MAX_ALLOWED < 120000
 #define kIOMainPortDefault kIOMasterPortDefault
 #endif
 #endif
